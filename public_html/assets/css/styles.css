@@ -1,110 +1,73 @@
-*{ margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
+body{
+    font-size:1.1rem;
+    font-family:Arial;
 }
-::-moz-selection { background: #E28590; color: #fff; text-shadow: none; }
-::selection { background: #E28590; color: #fff; text-shadow: none; }
-html {
-    font: 1.3rem Arial;  /*base for em sizes*/;
-}
-body {
-    background:#f1f1f1;
-}
-.container {      
+.container {
     max-width:1080px;
+    width:95%;
+    margin:0 auto;        
+}
+.header{
     width:100%;
-    margin:0 auto;
-    text-align: center;
-    background:whitesmoke;
-}
-.container:first-child {
-	margin-top: 2%;
-}
-.container:last-child {	
-	margin-bottom:2%;
-}
-.main-content{
-    width:98.5%;
-    margin:0 auto;
-}
-.columns{
-   padding:2% 5%;
-   box-shadow:0 0 5px whitesmoke;   
-}
-.push{
-    float:right !important;
-}
-.pull{
-    float:left !important;
-}
-#asideRight{    
-    height:auto;
-}
-#team{
-    background:#ddd;
-    border:1px black ridge;
-}
-#cards div{
-    float:left;
-}
-.row{
-   width:auto; 
-}
-.row:before,.row:after{
-    content:'';
-    display:table;
-}
-.row:after{
-    clear:both;
-}
-.row .row{
-    padding:0;
-}
-.header, footer{
     background-color:#000;
-    color:whitesmoke;
+    color:white;
 }
-
+.headline{
+    font-size:2.5rem;
+    text-align:center;
+}
 nav ul{
-    list-style: none;
-    float:left;
+    -webkit-padding-start:0;
+    width:100%;    
+    list-style:none;    
 }
 nav ul li{
-    border:2px ridge wheat;
-    margin:1%;
-    border-radius:5px;
+    width:100%;
+    border:1px solid aliceblue;
+    border-radius:2px;
+    text-align:center;
+    background-color:silver;
     cursor:pointer;
-    background-color:#999999;
-    color:whitesmoke;
+}
+.articles{
+    display:flex;    
+}
+.articles .columns{
+    flex:1;
+    margin:0 12%;
+    cursor:pointer;
 }
 #view{
-    background-color:#ccffff;
-    color:green;    
+    padding:0 3%;
 }
-article, #navi{
-    float:left;
+.box {
+    display:flex;
 }
-#navi, #asideRight{
-    background:#cccccc
+
+.box div {
+    background:lightslategrey;
+    margin:1px;
+    flex:1;
+    height:100px;
 }
-#cards div{    
-    border:1px solid gray;
+
+.box div:nth-of-type(2) {
+    flex:2;
+    background-image:url('assets/images/ernie.jpg');
+    background-size:100% auto;
+    background-repeat:no-repeat;        
 }
-#cards .columns:nth-of-type(1),#cards .columns:nth-of-type(3){
-    background-color:lightgray;
-}
-#cards .columns:nth-of-type(2){
-    background-color:#1b685b;
+.box div:nth-of-type(3) {
+    flex:1;
 }
 
 
-article:nth-of-type(1), article:nth-of-type(3){
-    background-color:orange;    
-}
-article:nth-of-type(2){
-    background-color:#f5e5af;    
-}
 footer{
-   width:100%;   
-   opacity:0.6;
+    width:100%;
+    background:#000;
+    color:whitesmoke;
+    text-align:center;
+    font-size:2rem;
 }
+
+
