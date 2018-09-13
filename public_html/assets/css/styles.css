@@ -8,12 +8,15 @@ body{
     margin:0 auto;        
 }
 .header{
-    width:100%;
-    background-color:#000;
+    width:100%;    
+    background-image:url('../images/Banner1.jpg');
+    background-size:20% auto;
+    background-repeat:repeat-x;
     color:white;
 }
 .headline{
     font-size:2.5rem;
+    text-shadow:0 0 5px black;
     text-align:center;
 }
 nav ul{
@@ -30,12 +33,25 @@ nav ul li{
     cursor:pointer;
 }
 .articles{
-    display:flex;    
+    display:flex;   
+    margin:3% 0 0 0;
 }
 .articles .columns{
     flex:1;
     margin:0 12%;
+    padding:0 0 10% 0;
     cursor:pointer;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.articles .columns:nth-of-type(1){
+    background-image:url('../images/linkBulletMiete.png');    
+}
+.articles .columns:nth-of-type(2){
+    background-image:url('../images/linkBulletVerkehr.png');    
+}
+.articles .columns:nth-of-type(3){
+    background-image:url('../images/linkBulletFamilie.png');    
 }
 #view{
     padding:0 3%;
