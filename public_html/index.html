@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="GridProject1">
+        <meta name="author" content="Stefan Landvogt">
+        <title>Grid2_Indisoft</title>
+        <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/js/lib/jquery.min.js"></script>     
+        <script src="assets/js/lib/angularJS.js"></script>        
+        <script src="assets/js/lib/ngRoute.js"></script>    
+        <script src="assets/js/mainJS.js"></script>        
+    </head>
+
+    <body ng-app="mainApp">
+        <!--<input type='text' ng-model='test'><br>{{test}}-->
+        <!--container all-->
+        <div class="container">
+            <header ng-include="'kanzlei/header.html'"></header> 
+        </div>
+        <div class="container main-content">
+            <!--main-->
+            <div class="row content">
+                <div ng-include="'kanzlei/asideLeft.html'"></div>
+                <div ng-view id="view">Main</div>
+                <div ng-include="'kanzlei/asideRight.html'"></div>
+            </div>                
+        </div>
+        <div class="container main-content">
+            <!--cards-->
+            <div ng-include="'kanzlei/cards.html'"></div> 
+        </div>
+        <div class="container">
+            <div ng-include="'kanzlei/footer.html'"></div>            
+        </div><!--eof container-->
+    </body>
+</html>
