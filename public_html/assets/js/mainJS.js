@@ -49,12 +49,15 @@ app.controller('headerCtrl', function ($scope) {
 });
 app.controller('asideLeftCtrl', function ($scope) {    
     $('#sandwich').click(function () {
-        $('#asideLeft').slideDown('slow');
+        $('#navi .navSmall').slideDown('slow');
         $(this).slideUp('fast');        
     });
-    $('#asideLeft ul li a').click(function(){
-        $('#asideLeft').slideUp('slow');
+    $('#navi .navSmall li').click(function(){
+        $('#navi .navSmall').slideUp('slow');
         $('#sandwich').slideDown('slow');
+    });
+    $('#schwerpunkte').click(function(){
+        $('#submenu').slideToggle('slow');
     });
     
 });

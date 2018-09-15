@@ -1,9 +1,33 @@
-<aside id="navi">
-    <nav>
+<aside id="navi" ng-controller="asideLeftCtrl">
+    <div id="sandwich"></div>
+    <nav class="navSmall">
         <ul>
-            <li>Hier lang</li>
-            <li>Da lang</li>
-            <li>Oder hier</li>            
+            <li ng-href="#/kanzlei">Kanzlei</li>
+            <li>Mietrecht</li>
+            <li>Familienrecht</li>
+            <li>Verkehrsrecht</li>
+            <li>Sonstige</li>                    
+            <li>Kontakt</li>            
+            <li>Anfahrt</li>            
+            <li>Impressum</li>
+            <li>Datenschutz</li>                        
+        </ul>
+    </nav>
+    <nav class="navBig">
+        <ul>
+            <li ng-href="#/kanzlei">Kanzlei</li>
+            <li id="schwerpunkte">Schwerpunkte
+                <ul id="submenu">
+                    <li>Mietrecht</li>
+                    <li>Familienrecht</li>
+                    <li>Verkehrsrecht</li>
+                    <li>Sonstige</li>                    
+                </ul>
+            </li>
+            <li>Kontakt</li>            
+            <li>Anfahrt</li>            
+            <li>Impressum</li>
+            <li>Datenschutz</li>                        
         </ul>
     </nav>
 </aside>
