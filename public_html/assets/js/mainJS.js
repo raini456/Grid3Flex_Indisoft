@@ -56,10 +56,21 @@ app.controller('asideLeftCtrl', function ($scope) {
         $('#navi .navSmall').slideUp('slow');
         $('#sandwich').slideDown('slow');
     });
-    $('#schwerpunkte').click(function(){
+    $('#schwerpunkte').click(function(){               
         $('#submenu').slideToggle('slow');
+    }); 
+    $('#navi .navBig .liBig').click(function(){
+        $('#submenu').slideUp('slow');        
     });
-    
+    $('.liBigSub').click(function(){
+        $('.liBigSub').css({
+            color:'black'
+        });
+        $(this).css({
+            color:'whitesmoke'
+        });
+        
+    });
 });
 
 app.controller('gebieteCtrl', function () {

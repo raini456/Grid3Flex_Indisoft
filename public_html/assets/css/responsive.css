@@ -1,45 +1,169 @@
-@media screen and (min-width:600px) {
+@media screen and (min-width:310px){
+    .headline{
+        font-size:2.3rem;
+    }
+    .articles{
+        margin: 5% 0 0 0;
+    }
+
+}
+@media screen and (min-width:400px){
+    .headline{
+        font-size:2.8rem;
+    }
+    .articles{
+        margin: 3% 0 0 0;
+    }
+
+}
+@media screen and (min-width:450px){
+    .articles .columns{
+        background-size: 75% 100%;  
+    }  
+    .articles{
+        margin:7% 0 0 0;
+    }
+}
+
+@media screen and (min-width:500px){
+    .headline{
+        font-size:2.8rem;
+    }
+    .articles .columns{
+        background-size: 70% 100%;  
+    }
+    .articles{
+        margin: 9% 0 0 0;
+    }
+
+}
+@media screen and (min-width:600px) { 
+    .header{
+        height:10rem;
+        background-size:auto 100%;
+    }
+    .headline{
+        padding:4% 0 0 0;
+    }
+    .articles .columns{
+        background-size: 50% 90%;          
+        margin:0 2%;
+    }
+    .articles{
+        margin:0 0 0 8%;
+    }
+    #sandwich{
+        display: none;
+    }    
+    #navi .navSmall{
+        display:none;        
+    } 
+    .content{
+        margin:10% 0 0 0;
+    }
+    #navi .navBig{ 
+        display:block;
+        width:30%;
+        box-sizing: border-box;
+        float:left;
+    }        
+    #view{
+        width:70%;
+        float:left;
+        box-sizing:border-box;
+    } 
     .headline{
         font-size:3rem;
-    }
-    #cards{
-        display:flex;
-    }
-    #cards .card{
-        font-size:1.7rem;
-        text-align: center;
-        display:flex;
-        justify-content:flex-end;
-        align-items:flex-end;
-        flex:1;
-        margin:0 auto;
-    }
-    #cards .card:nth-of-type(1){               
-        justify-content:flex-start;
-    }
-    #cards .card:nth-of-type(2){               
-        justify-content:center;
-    }
-    #cards .card:nth-of-type(3) h3{        
-        justify-content:flex-end;        
+        padding:2%;
     }    
+    #cards .card:nth-of-type(1){                       
+        justify-content:flex-start;        
+    }
+    #cards .card:nth-of-type(2){
+        display:block;
+        flex:1;
+        justify-content:center;                 
+    }
+    #cards .card:nth-of-type(3){        
+        justify-content:flex-end;        
+    }
+    #cardsVideo{
+        display:none;
+    }
 }
-@media screen and (min-width:900px) {
-    .content {            
-        display:flex;	
+@media screen and (min-width:700px){    
+    .articles .columns{
+        background-size: 55% 90%;  
     }
-    .content div:nth-of-type(1),.content div:nth-of-type(3){
-        flex:1;        
+    .articles{
+        margin: 0 0 0 12%;
     }
-    .content div:nth-of-type(2){
-        flex:3;        
+}
+@media screen and (min-width:739px){
+    .headline{
+        padding:6% 2%;
+    }
+    .articles .columns{
+        background-size:30% 65%;
+    }
+    .articles{
+        margin: -2% 0 0 12%;
+    }
+    .content{
+        margin:7% 0 0 0;
+    }
+} 
+@media screen and (min-width:800px){ 
+    #sandwich{
+        display:none;
+    }    
+    .header{
+        height:7rem;
     }
     .headline{
         width:100%;
+        padding:2% 0;
         text-align:center;
-        font-size:3.5rem;
-    } 
+        font-size:3rem;
+    }    
+}
+@media screen and (min-width:900px){ 
+    #sandwich{
+        display:none;
+    }
+    .header{
+        height:7rem;
+    }
+    .headline{
+        width:100%;
+        padding:2% 0;
+        text-align:center;
+        font-size:3rem;
+    }
+    .articles .columns{
+        background-size:25% 55%;
+    }
+    .articles{
+        margin: 0 0 0 12%;
+    }
+    .content{            
+        display:flex;        
+    }    
+    #navi .navBig{
+        flex:1;
+        width:100%;
+    }
+    #view{
+        flex:1;        
+    }            
+    article .box{        
+        display:block;
+    }
+    
     .box{
-        display: block;
+        display:block;        
+        width:12rem;
+        padding:0 1rem 0 0;
+
     }
 }
