@@ -159,11 +159,13 @@
     article .box{        
         display:block;
     }
-    
+
     .box{
         display:block;        
         width:12rem;
         padding:0 1rem 0 0;
-
+    }    
+    .box div:nth-of-type(3) {
+        background-position: center;        
     }
 }
