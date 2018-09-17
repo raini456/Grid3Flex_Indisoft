@@ -155,7 +155,7 @@ nav ul li:hover{
 }
 #cards .card:nth-of-type(3){
     flex:1;
-    background-image:url('../images/team2.jpg');
+    /*background-image:url('../images/team2.jpg');*/
 }
 #cardsVideo{    
     width:100%;
