@@ -4,13 +4,45 @@ angular.element(function () {
 });
 app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-                .when('/', {
+                .when('/kanzlei', {
                     templateUrl: 'kanzlei/main.html',
                     controller: 'indexCtrl'
                 })
-                .when('/home', {
-                    templateUrl: 'kanzlei/main.html',
-                    controller: 'mainCtrl'
+                .when('/team', {
+                    templateUrl: 'kanzlei/team.html',
+                    controller: 'teamCtrl'
+                })                
+                .when('/miete', {
+                    templateUrl: 'kanzlei/mietrecht.html',
+                    controller: 'mieteCtrl'
+                })
+                .when('/verkehr', {
+                    templateUrl: 'kanzlei/verkehrsrecht.html',
+                    controller: 'verkehrCtrl'
+                })
+                .when('/familie', {
+                    templateUrl: 'kanzlei/familienrecht.html',
+                    controller: 'familieCtrl'
+                })
+                .when('/weitere', {
+                    templateUrl: 'kanzlei/weitere.html',
+                    controller: 'weitereCtrl'
+                })
+                .when('/kontakt', {
+                    templateUrl: 'kanzlei/email.html',
+                    controller: 'emailCtrl'
+                })
+                .when('/anfahrt', {
+                    templateUrl: 'kanzlei/anfahrt.html',
+                    controller: 'anfahrtCtrl'
+                })
+                .when('/impressum', {
+                    templateUrl: 'kanzlei/impressum.html',
+                    controller: 'impressumCtrl'
+                })
+                .when('/datenschutz', {
+                    templateUrl: 'kanzlei/datenschutz.html',
+                    controller: 'datenschutzCtrl'
                 })
                 .when("/gebiete", {
                     templateUrl: 'kanzlei/gebiete.html',
@@ -45,7 +77,15 @@ app.controller('mainCtrl', function () {
 });
 app.controller('indexCtrl', function ($scope) {});
 app.controller('headerCtrl', function ($scope) {
-    
+    $('.articles .miete').click(function(){
+        window.location="#/miete";
+    }); 
+    $('.articles .verkehr').click(function(){
+        window.location="#/verkehr";
+    }); 
+    $('.articles .familie').click(function(){
+        window.location="#/familie";
+    }); 
 });
 app.controller('asideLeftCtrl', function ($scope) {    
     $('#sandwich').click(function () {

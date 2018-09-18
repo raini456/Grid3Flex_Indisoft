@@ -63,7 +63,7 @@
 
 .figure1{  
   background-color:blue;
-  background-image: url('../images/team1.jpg');
+  background-image: url('assets/images/team1.jpg');
 }
 .figure2{
   background-image: url('../images/team2.jpg');  
