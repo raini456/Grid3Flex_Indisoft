@@ -112,6 +112,11 @@ app.controller('asideLeftCtrl', function ($scope) {
         
     });
 });
+app.controller('asideRightCtrl', function ($scope) {    
+    $('.box .email').click(function(){        
+        window.location="#/email";    
+    });
+});
 
 app.controller('gebieteCtrl', function () {
     $('.familienrecht').click(function () {
