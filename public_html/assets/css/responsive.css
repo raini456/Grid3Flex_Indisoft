@@ -35,6 +35,18 @@
     .articles{
         margin: 9% 0 0 0;
     }
+    #cards .card:nth-of-type(1){
+    flex:1;   
+}
+#cards .card:nth-of-type(2){
+    display:none;
+    flex:2;
+}
+
+#cards .card:nth-of-type(3){
+    flex:1;
+    
+}
 
 }
 @media screen and (min-width:600px) { 
@@ -167,5 +179,8 @@
     }    
     .box div:nth-of-type(3) {
         background-position: center;        
+    }
+    #cards{
+        width:100%;
     }
 }

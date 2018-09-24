@@ -1,15 +1,14 @@
 #slider{
-    display:table;  
-    background-image:url('../images/team3.jpg');
+    display:inline-block;  
     width:100%;
-    height:6rem;
+    height:14rem;
 }
 .slider {      
    overflow:hidden;
-   width:100%;   
+   width:100%; 
+   margin-top:-4%;
 }
-.slider figure{   
-   background-size: 100% 100%;         
+.slider figure{               
    background-repeat: no-repeat;
    transition: opacity 2s ease-in-out;     
 }
@@ -28,7 +27,11 @@
 .labels{         
    transform: translateX(3%);  
 }
-
+#lineCoins{
+    width:100%;
+    margin:-2% 0 0 6%;
+    box-shadow:border-box;
+}
 .s-index{
    width:1.5rem;
    height:1.5rem;
@@ -36,7 +39,7 @@
    background-color:#efefef;
    display:inline-block;
    cursor:pointer;
-   border:1px solid grey;
+   border:1px solid grey;      
 }
 .radioNav, .radio1, .radio2, .radio3, .radio4, .radio5, .radio6{
    display:none;   
@@ -54,16 +57,15 @@
 
 .figure1, .figure2, .figure3, .figure4, .figure5, .figure6{
   width:100% !important;
-  height:24rem !important;     
-  background-size:100% 100%;    
+  height:11rem !important;     
+  background-size:auto 100%;    
   background-repeat: no-repeat;  
   overflow:hidden;
   display:none;
 }
 
-.figure1{  
-  background-color:blue;
-  background-image: url('assets/images/team1.jpg');
+.figure1{    
+  background-image: url('../images/team1.jpg');
 }
 .figure2{
   background-image: url('../images/team2.jpg');  

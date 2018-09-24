@@ -1,6 +1,6 @@
 var app = angular.module("mainApp", ['ngRoute']);
 angular.element(function () {
-    angular.bootstrap(document, ['mainApp']);
+    angular.bootstrap(document, ['mainApp']);    
 });
 app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
@@ -68,6 +68,10 @@ app.config(['$routeProvider', function ($routeProvider) {
                     templateUrl: 'kanzlei/datenschutz.html',
                     controller: 'datenschutzCtrl'
                 })
+                .when("/", {
+                    templateUrl: 'kanzlei/main.html',
+                    controller: 'indexCtrl'
+                })
                 .otherwise({
                     redirectTo: 'kanzlei/main.html'
                 });
@@ -75,7 +79,6 @@ app.config(['$routeProvider', function ($routeProvider) {
 app.controller('mainCtrl', function () {
 
 });
-app.controller('indexCtrl', function ($scope) {});
 app.controller('headerCtrl', function ($scope) {
     $('.articles .miete').click(function(){
         window.location="#/miete";
@@ -117,7 +120,9 @@ app.controller('asideRightCtrl', function ($scope) {
         window.location="#/email";    
     });
 });
-
+app.controller('indexCtrl', function(){
+    
+});
 app.controller('gebieteCtrl', function () {
     $('.familienrecht').click(function () {
         $('#familienrecht').slideDown('slow');
@@ -229,3 +234,4 @@ app.controller('teamCtrl', function ($scope) {
         });
     };
 });
+
